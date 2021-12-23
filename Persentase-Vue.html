@@ -7,6 +7,7 @@
     <title>Tugas</title>
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/moon.css">
+    <link rel="stylesheet" href="css/style/style.css">
     <style>
        
     </style>
@@ -14,6 +15,7 @@
 <body>
     <div class="reveal">
         <div class="slides">
+            <!--
             <section data-markdown style="background-color:aquamarine; padding:200px 1px 200px 1px; border:solid 15px; border-radius:25px 190px;">
                 <h2 style="text-align:center;color:black;">Vue</h2>
                 <h6> <a href="#last">Go to the last slide</a></h6>
@@ -39,45 +41,163 @@
             <section>
                Slide 8
             </section>
+        -->
             <section>
-                <h2>Components and Frameworks Vue</h2> 
-                <h3>Vuetify</h3>
-                <p>Vuetify adalah Perpustakaan UI Vue dengan komponen Material yang Secara khusus setiap komponen dibangun dengan pendekatan mobile first untuk menjadi responsif dan sangat modular. </p>
-                <p>
-                    <ul>Highlights:</ul>
-                        <li>Dilengkapi dengan API yang mudah digunakan</li>
-                        <li>Desain material memengaruhi perpustakaan</li>
-                        <li>Fitur yang paling berguna meliputi: input formulir dan bereaksi untuk menggunakan input (mouseovers dan klik)</li>
-                </p>
+                <h3>Components and Frameworks Vue</h3> 
+                <h3 class="title1">Vuetify</h3>
+                <p class="desc">Vuetify adalah Perpustakaan UI Vue dengan komponen Material yang Secara khusus setiap komponen dibangun dengan pendekatan mobile first untuk menjadi responsif dan sangat modular. Vuetify juga menyediakan template dasar untuk <i>Apache Cordova, A La Carte, Electron, PWA, NUXT, Webpack,</i> dan <i>Simple HTML </i></p>
+                <div class="popup" id="popup1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="detail_vuetify()">&times;</div>
+                        <h4>Details</h4>
+                        <p>
+                            <li>Dilengkapi dengan API yang mudah digunakan</li>
+                            <li>Desain material memengaruhi perpustakaan</li>
+                            <li>Fitur yang paling berguna meliputi: input formulir dan bereaksi untuk menggunakan input (mouseovers dan klik)</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="popup" id="popup2">
+                    <div class="overlay"></div>
+                    <div class="fitur">
+                        <div class="close-btn" onclick="ui_vuetify()">&times;</div>
+                        <h4>Ui Components</h4>
+                        <table class="table">
+                            <tr>
+                            <td>Aspect ratios</td>
+                            <td>Avatars Badges</td>
+                            <td>Banners</td>
+                            <td>Bars</td>
+                            </tr>
+                            <tr>
+                            <td>Bottom navigation</td>
+                            <td>Bottom sheets</td>
+                            <td>Breadcrumbs</td>
+                            <td>Calendars</td>
+                            </tr>
+                            <tr>
+                            <td>Cards</td>
+                            <td>Carousels</td>
+                            <td>Chips</td>
+                            <td>Dialogs</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button onclick="detail_vuetify()">Details</button>
+                <button onclick="ui_vuetify()">UI</button>
             </section>
             <section>
-               <h3>Quasar</h3>
-               <p>Quasar adalah kerangka vue lain yang mengikuti Pedoman Material 2.0. Quasar memiliki hingga 81 komponen dapat memberikan dukungan untuk desktop dan mobile browser (termasuk iOS Safari!) di luar kotak. Dengan Quasar, Anda mendapatkan dukungan kelas satu untuk setiap mode build (SPA, SSR, PWA, aplikasi Seluler, aplikasi Desktop).
+               <h3 class="title2">Quasar</h3>
+               <p class="desc">Quasar adalah kerangka vue lain yang mengikuti Pedoman Material 2.0. Quasar memiliki hingga 81 komponen dapat memberikan dukungan untuk desktop dan mobile browser (termasuk iOS Safari!) di luar kotak. Dengan Quasar, Anda mendapatkan dukungan kelas satu untuk setiap mode build (SPA, SSR, PWA, aplikasi Seluler, aplikasi Desktop).
                 Quasar adalah framework berbasis Vue.js open source yang memungkinkan pengembang untuk membangun aplikasi responsif untuk hampir setiap platform. Quasar memiliki kemampuan built-in untuk beralih di antara mode build.
                 </p>
-                <p>
-                    <ul>Highlights:</ul>
-                        <li>Kode sumber otoritatif yang sama untuk semua platform</li>
-                        <li>Aplikasi web progresif</li>
-                        <li>Memiliki lebih dari 8 ribu bintang di GitHub</li>
-                        <li>Komponen web kelas atas, cepat dan responsif</li>
-                        <li>Menerapkan praktik pengembangan web terbaik</li>
-                </p>
+                <div class="popup" id="popup3">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="detail_quasar()">&times;</div>
+                        <h4>Details</h4>
+                        <p>
+                            <li>Kode sumber otoritatif yang sama untuk semua platform</li>
+                            <li>Aplikasi web progresif</li>
+                            <li>Memiliki lebih dari 8 ribu bintang di GitHub</li>
+                            <li>Komponen web kelas atas, cepat dan responsif</li>
+                            <li>Menerapkan praktik pengembangan web terbaik</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="popup" id="popup4">
+                    <div class="overlay"></div>
+                    <div class="fitur">
+                        <div class="close-btn" onclick="ui_quasar()">&times;</div>
+                        <h4>Ui Components</h4>
+                        <table class="table">
+                            <tr>
+                            <td>Ajax Bar</td>
+                            <td>Avatar</td>
+                            <td>Badge</td>
+                            <td>Banner</td>
+                            </tr>
+                            <tr>
+                            <td>Breadcrumbs</td>
+                            <td>Card</td>
+                            <td>Carousel</td>
+                            <td>Chat Message</td>
+                            </tr>
+                            <tr>
+                            <td>Icon</td>
+                            <td>Intersection</td>
+                            <td>Knob</td>
+                            <td>Layout</td>
+                            </tr>
+                            <tr>
+                                <td>Mutation</td>
+                                <td>Morph</td>
+                                <td>Scroll</td>
+                                <td>Plugins</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button onclick="detail_quasar()">Details</button>
+                <button onclick="ui_quasar()">UI</button>
             </section>
             <section>
-                <h3>Buefy</h3>
-                <p>Buefy adalah open source, kerangka vue ringan yang dibangun di atas kerangka CSS Bulma.Bulma adalah framework CSS modern yang memungkinkan pengembang untuk secara intuitif membuat komponen responsif. Dengan nama-nama kelas bahasa Inggris yang sederhana, mudah untuk memahami sekilas bagaimana tepatnya nama kelas Anda mempengaruhi gaya elemen.</p>
-                <p>
-                    <ul>Highlights:</ul>
-                        <li>Open-source di GitHub</li>
-                        <li>Setiap komponen perpustakaan Buefy responsif</li>
-                        <li>Tidak ada ketergantungan internal, maka itu ringan</li>
-                        <li>Didokumentasikan dengan baik</li>
-                        <li>Mendukung Font Awesome dan Ikon Desain Material</li>
-                        <li>Output kode semantik</li>
-                        <li>Kinerja dan kegunaan yang andal</li>
-                </p>
+                <h3 class="title3">Buefy</h3>
+                <p class="desc">Buefy adalah open source, kerangka vue ringan yang dibangun di atas kerangka CSS Bulma.Bulma adalah framework CSS modern yang memungkinkan pengembang untuk secara intuitif membuat komponen responsif. Dengan nama-nama kelas bahasa Inggris yang sederhana, mudah untuk memahami sekilas bagaimana tepatnya nama kelas Anda mempengaruhi gaya elemen.</p>
+                <div class="popup" id="popup5">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="detail_buefy()">&times;</div>
+                        <h4>Details</h4>
+                        <p>
+                            <li>Open-source di GitHub</li>
+                            <li>Komponen perpustakaan Buefy responsif</li>
+                            <li>Tidak ada ketergantungan internal</li>
+                            <li>Didokumentasikan dengan baik</li>
+                            <li>Output kode semantik</li>
+                            <li>Kinerja dan kegunaan yang andal</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="popup" id="popup6">
+                    <div class="overlay"></div>
+                    <div class="fitur">
+                        <div class="close-btn" onclick="ui_buefy()">&times;</div>
+                        <h4>Ui Components</h4>
+                        <table class="table">
+                            <tr>
+                            <td>Snackbar</td>
+                            <td>Updated</td>
+                            <td>Updated</td>
+                            <td>Tooltip</td>
+                            </tr>
+                            <tr>
+                            <td>Navbar</td>
+                            <td>Updated</td>
+                            <td>Notification</td>
+                            <td>Pagination</td>
+                            </tr>
+                            <tr>
+                                <td>Spinners</td>
+                                <td>Splitter</td>
+                                <td>Stepper</td>
+                                <td>Tab Panels</td>
+                            </tr>
+                            <tr>
+                                <td>Toggle</td>
+                                <td>Uploader</td>
+                                <td>Video</td>
+                                <td>Directives</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <button onclick="detail_buefy()">Details</button>
+                <button onclick="ui_buefy()">UI</button>
             </section>
+            <!--
             <section>
                 Slide 12
             </section>
@@ -113,19 +233,38 @@
                     </code>
                 </pre>
             </section>
+        -->
         </div>
     </div>
     
     <script src="dist/reveal.js"></script>
     <script src="plugin/math/math.js"></script>
     <script>
-        Reveal.initialize({
+       Reveal.initialize({
             plugins:[RevealMath],
-            autoSlide:1000,
+          /*  autoSlide:1000,
             loop:true,
-            slideNumber:'c/t',
+            slideNumber:'c/t',*/
         });
         
+        function detail_vuetify() {
+            document.getElementById("popup1").classList.toggle("active");
+        }
+        function ui_vuetify() {
+            document.getElementById("popup2").classList.toggle("active");
+        }
+        function detail_quasar() {
+            document.getElementById("popup3").classList.toggle("active");
+        }
+        function ui_quasar() {
+            document.getElementById("popup4").classList.toggle("active");
+        }
+        function detail_buefy() {
+            document.getElementById("popup5").classList.toggle("active");
+        }
+        function ui_buefy() {
+            document.getElementById("popup6").classList.toggle("active");
+        }
     </script>
 </body>
 </html>
