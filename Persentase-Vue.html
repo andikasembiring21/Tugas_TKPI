@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/moon.css">
     <link rel="stylesheet" href="css/style/style.css">
+
     <style>
        
     </style>
@@ -15,7 +16,6 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <!--
             <section data-markdown style="background-color:aquamarine; padding:200px 1px 200px 1px; border:solid 15px; border-radius:25px 190px;">
                 <h2 style="text-align:center;color:black;">Vue</h2>
                 <h6> <a href="#last">Go to the last slide</a></h6>
@@ -41,7 +41,6 @@
             <section>
                Slide 8
             </section>
-        -->
             <section>
                 <h3>Components and Frameworks Vue</h3> 
                 <h3 class="title1">Vuetify</h3>
@@ -197,13 +196,6 @@
                 <button onclick="detail_buefy()">Details</button>
                 <button onclick="ui_buefy()">UI</button>
             </section>
-            <!--
-            <section>
-                Slide 12
-            </section>
-            <section>
-                Slide 13
-            </section>
             <section>
                 <pre>
                     <code data-line-numbers="3,8-10">
@@ -233,20 +225,12 @@
                     </code>
                 </pre>
             </section>
-        -->
         </div>
     </div>
     
     <script src="dist/reveal.js"></script>
     <script src="plugin/math/math.js"></script>
     <script>
-       Reveal.initialize({
-            plugins:[RevealMath],
-          /*  autoSlide:1000,
-            loop:true,
-            slideNumber:'c/t',*/
-        });
-        
         function detail_vuetify() {
             document.getElementById("popup1").classList.toggle("active");
         }
@@ -265,6 +249,12 @@
         function ui_buefy() {
             document.getElementById("popup6").classList.toggle("active");
         }
+        Reveal.initialize({
+            plugins:[RevealMath],
+            autoSlide:1000,
+            loop:true,
+            slideNumber:'c/t',
+        });
     </script>
 </body>
 </html>
