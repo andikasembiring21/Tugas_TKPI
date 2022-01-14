@@ -40,9 +40,9 @@ li{
      background: teal;
  }
  .popup .content:hover{
-     opacity: 0.5;
+     opacity: 0.7;
      color: #000;
-     background:rgb(45, 211, 81);
+     background:aliceblue;
  }
  .popup .fitur{
     position: absolute;
@@ -59,9 +59,9 @@ li{
     border-radius: 5%;
 }
 .popup .fitur:hover{
-    opacity: 0.5;
+    opacity: 0.7;
     color: #000;
-    background:rgb(45, 211, 81);
+    background:aliceblue;
 }
  .popup .close-btn{
      cursor: pointer;
@@ -92,4 +92,10 @@ li{
  .table tr td{
      font-size:20px;
      margin:-10px;
+ }
+ .install{
+     padding:140px;
+     background-color:aliceblue;
+     margin-left: 12px;
+     margin-top: -140px;
  }
